@@ -1,0 +1,12 @@
+public class DataDemo {
+    public static void main (String args[]) {
+       print(-10); //不会有输出，直接返回调用处
+       print(10);  //会返回输出，执行完毕返回调用处
+    }
+    public static void print(int age){
+        if (age < 0){
+            return ;   //结束方法，因为是void所以不返回内容
+        }
+       System.out.println("年龄是"+age) ;
+    }
+}
